@@ -1,0 +1,65 @@
+
+              Extended Parameters 0.01 for Perl
+
+
+    Extended Parameters, Getopt::ExPar, is written as a possible alternative
+to current getopt packages.  Based, for the most part, on Stephen Lidie's
+Getopt::EvaP package, this has several features that go beyond EvaP's 
+capabilities.
+
+ - Include a 'set' supertype which allows users to have multiple values for
+   a single option.  Like lists, the only type unavailable in sets is switch.
+   Also, sets within sets are not allowed.
+
+ - Each script that uses ExPar has a built in -help option which may list
+   the command line options, their aliases, their types and default values.
+
+ - All parameter types except switch may be lists and sets.
+
+ - Use of ENV, or environment, variables is more flexible.
+
+ - Use of abbreviations may be allowed.  The user may abbreviate commands or
+   aliases as long as enough of the command is given to make it distinguishable
+   from all others.  If not, a message is printed so the user may be more specific.
+
+ - Use of 'switchglomming' may be allowed.  This is where multiple single-letter
+   switches (either the command or alias must be a single letter) may be glommed,
+   or grouped, together as the first option on the command line.
+   Ex: script.pl -x -f -c -a arga   may be executed as
+       script.pl -xfc -a arga       OR
+       script.pl -fxc -a arga
+
+------------
+INSTALLATION
+------------
+SOP:
+ 
+        perl Makefile.PL
+        make
+        make install
+ 
+This should install to your site_perl directory.
+
+------------
+AVAILABILITY
+------------
+
+Will be available on CPAN mirror as soon as I see how it's done.
+
+------
+AUTHOR
+------
+
+Harlin L. Hamilton Jr.
+Alcatel USA, Richardson, TX
+
+hlhamilt@aud.alcatel.com
+
+---------
+COPYRIGHT
+---------
+ 
+Copyright(c) 1998 Harlin L. Hamilton Jr.  All rights reserved.  This program
+is free software; you can redistribute it and/or modify it under the same
+terms as Perl itself.
+
