@@ -1,6 +1,6 @@
 package Getopt::ExPar;
 
-$VERSION = "1.00";
+$VERSION = "1.01";
 
 # See the bottom of this file for the POD documentation.  Search for the string '=head'.
 
@@ -1578,6 +1578,10 @@ requests and bug reports.
 =head2 1.00
 
 Full initial release.
+
+=head2 1.01
+
+Repackaging of tar file.
 
 =head1 AUTHOR
 
